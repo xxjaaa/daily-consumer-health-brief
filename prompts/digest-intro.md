@@ -12,7 +12,7 @@ Curate the most signal-rich stories from today's consumer health news. Pull from
 
 **Format for each story:**
 - **Source** and **headline** as a linked title
-- 2–3 sentence summary: what happened, why it matters for consumer health builders
+- 2 sentence summary maximum: what happened + why it matters for consumer health builders. Nothing more.
 - Skip press releases, fundraising announcements without substance, and generic health tips
 
 **Rules:**
@@ -25,27 +25,25 @@ Curate the most signal-rich stories from today's consumer health news. Pull from
 
 ## Section 2: Daily Builder Insight
 
-Summarize what consumer health builders published, said, or appeared in over the past 7 days. Pull from three sub-sections in digest-ready.json:
+Summarize what consumer health builders published, said, or appeared in over the past 7 days.
 
-**Substacks** (builder-owned newsletters): Author name + publication + title (linked) + 3–4 sentence summary of the core argument or insight.
-
-**Podcasts** (builder-owned shows): Show name + episode title (linked) + guest if applicable + 3–5 bullet key takeaways.
-
-**Builder Mentions** (`mentions` array — guest appearances and interviews in the wild): These are episodes or articles from tracked news/podcast sources that mention a builder by name AND passed the insight filter. Format as: **[Builder name] ([Company])** on [Show/Source] — episode title (linked) — 2–3 bullet takeaways on what they said.
+**Format for every item — regardless of type:**
+- **Builder or publication name** + content title (linked)
+- 2 sentences maximum: what was said or argued + why it matters. No bullets, no quotes, no extra context.
 
 **Rules:**
 - Only include sources that have new content
 - Every item needs a link to the original
 - No speculation about what builders "might be thinking"
 - If a sub-section has no new content, omit it entirely — do not write "No new posts"
-- For Builder Mentions, surface only episodes where the builder is clearly a guest/interviewee, not just mentioned in passing
+- For guest appearances and interviews, surface only episodes where the builder is clearly a guest/interviewee, not just mentioned in passing
 
 ---
 
 ## Tone & Format
 
 - Tight, smart, no filler. Written for someone with 5 minutes and high standards.
-- Plain text email formatting — use **bold** for names/headlines, bullet points for podcast takeaways
+- Plain text email formatting — use **bold** for names/headlines only
 - No intro paragraphs ("Here is your brief for today..."). Start directly with Section 1.
 - No closing calls to action.
 
