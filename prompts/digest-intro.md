@@ -11,15 +11,17 @@ The brief has two sections. Assemble them in order.
 Curate the most signal-rich stories from today's consumer health news. Pull from: Fitt Insider, Out of Pocket, and Rock Health.
 
 **Format for each story:**
-- **Source** and **headline** as a linked title
-- 2 sentence summary maximum: what happened + why it matters for consumer health builders. Nothing more.
-- Skip press releases, fundraising announcements without substance, and generic health tips
+```
+Source — Title ([link](url))
+2–3 sentence summary: what happened + why it matters for consumer health builders.
+```
 
 **Rules:**
 - Include 4–6 stories maximum. Quality over quantity.
 - Lead with the story with the most strategic implication for builders/investors
 - Every item must have a source link. No link = exclude it.
 - Do not fabricate or speculate beyond what the source says
+- Skip press releases without substance and generic health tips
 
 ---
 
@@ -27,23 +29,26 @@ Curate the most signal-rich stories from today's consumer health news. Pull from
 
 Summarize what consumer health builders published, said, or appeared in over the past 7 days.
 
-**Format for every item — regardless of type:**
-- **Builder or publication name** + content title (linked)
-- 2 sentences maximum: what was said or argued + why it matters. No bullets, no quotes, no extra context.
+**Format for every item — regardless of type (podcast, newsletter, interview, YouTube):**
+```
+Source — Title ([link](url))
+3–5 sentence summary paragraph: who said what, the core argument or insight, and why it matters for consumer health builders.
+```
 
 **Rules:**
+- One cohesive paragraph per item. No bullets, no sub-headers within an item.
 - Only include sources that have new content
 - Every item needs a link to the original
 - No speculation about what builders "might be thinking"
 - If a sub-section has no new content, omit it entirely — do not write "No new posts"
-- For guest appearances and interviews, surface only episodes where the builder is clearly a guest/interviewee, not just mentioned in passing
+- For guest appearances and interviews, only include episodes where the builder is clearly a guest/interviewee, not just mentioned in passing
 
 ---
 
 ## Tone & Format
 
 - Tight, smart, no filler. Written for someone with 5 minutes and high standards.
-- Plain text email formatting — use **bold** for names/headlines only
+- Plain text email formatting — use **bold** for source names only
 - No intro paragraphs ("Here is your brief for today..."). Start directly with Section 1.
 - No closing calls to action.
 
