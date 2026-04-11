@@ -84,9 +84,39 @@ node --env-file=../.env prepare-digest.js
 
 Then ask Claude to generate the brief using the `SKILL.md` instructions.
 
-### Schedule daily delivery
+### Schedule daily email delivery
 
-Push to GitHub, add your `.env` values as repository secrets in **Settings → Secrets and variables → Actions**, and the included GitHub Actions workflow will run at 9:00 AM PT every day.
+The repo includes a GitHub Actions workflow that runs every day at 9:00 AM PT and emails you the brief automatically.
+
+**Step 1 — Fork this repo**
+
+Click **Fork** on `github.com/xxjaaa/daily-consumer-health-brief` to create your own copy.
+
+**Step 2 — Add your secrets**
+
+Go to your fork's **Settings → Secrets and variables → Actions → New repository secret** and add each of the following:
+
+| Secret | How to get it |
+|---|---|
+| `ANTHROPIC_API_KEY` | [console.anthropic.com](https://console.anthropic.com) |
+| `PODCAST_INDEX_API_KEY` | [api.podcastindex.org](https://api.podcastindex.org) (free) |
+| `PODCAST_INDEX_API_SECRET` | Same as above |
+| `YOUTUBE_API_KEY` | [console.cloud.google.com](https://console.cloud.google.com) (free tier) |
+| `EMAIL_TO` | Your email address |
+| `EMAIL_FROM` | Your Gmail address |
+| `SMTP_HOST` | `smtp.gmail.com` |
+| `SMTP_PORT` | `587` |
+| `SMTP_SECURE` | `false` |
+| `SMTP_USER` | Your Gmail address |
+| `SMTP_PASS` | Gmail App Password — generate at [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords) (requires 2FA enabled) |
+
+**Step 3 — Enable write permissions**
+
+Go to **Settings → Actions → General → Workflow permissions** and select **Read and write permissions**. This lets the workflow save deduplication state between runs.
+
+**Step 4 — Trigger the first run**
+
+Go to **Actions → Daily Consumer Health Brief → Run workflow**. After the first successful run, it will fire automatically every day at 9:00 AM PT.
 
 ---
 
