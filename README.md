@@ -26,7 +26,27 @@ What tracked consumer health founders published, said, or appeared in:
 
 ---
 
-## Quick Start
+## Install as a Claude Code Skill
+
+The easiest way to use this is as a Claude Code skill — download and double-click to install.
+
+**Option A — Install from file**
+
+Download [`daily-health-brief.skill`](./daily-health-brief.skill) and double-click it. Claude Code will install it automatically.
+
+**Option B — Install from GitHub**
+
+```bash
+/plugin install xxjaaa/daily-consumer-health-brief
+```
+
+Once installed, trigger it by typing `/daily-health-brief` in Claude Code.
+
+---
+
+## Self-Hosted Setup
+
+To run the full pipeline (automated daily email via GitHub Actions), clone and configure the repo yourself.
 
 ### Prerequisites
 - Node.js 18+
@@ -66,7 +86,7 @@ Then ask Claude to generate the brief using the `SKILL.md` instructions.
 
 ### Schedule daily delivery
 
-Push to GitHub, add your `.env` values as repository secrets in **Settings → Secrets and variables → Actions**, and the included GitHub Actions workflow will run at 7:00 AM PT on weekdays.
+Push to GitHub, add your `.env` values as repository secrets in **Settings → Secrets and variables → Actions**, and the included GitHub Actions workflow will run at 9:00 AM PT every day.
 
 ---
 
