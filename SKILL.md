@@ -1,3 +1,12 @@
+---
+name: daily-health-brief
+description: >
+  Delivers a curated Daily Consumer Health Brief covering industry news and builder insights.
+  Use this skill whenever the user runs /daily-health-brief, asks for their daily consumer health
+  brief, wants to see what's happening in consumer health today, or asks about news from Fitt Insider,
+  Out of Pocket, Rock Health, or what tracked founders and builders have published or said recently.
+---
+
 # Daily Consumer Health Brief
 
 **Trigger**: When the user runs `/daily-health-brief` or asks for their daily consumer health brief.
