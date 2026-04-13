@@ -79,8 +79,16 @@ function main() {
     .map(i => ({ ...mapBase(i), type: 'substack', author: i.author, platform: 'Substack' }));
 
   // ── 3. Builder podcasts (owned shows) ─────────────────────────────────────
+  // Podcasts are NOT cross-run deduplicated — we always want the latest episode
+  // even if it was seen in a previous run. Only deduplicate within this run by URL.
   const podcastItems = raw.builders.podcasts
-    .filter(isNew).filter(i => i.url)
+    .filter(i => {
+      if (!i.url) return false;
+      const normUrl = normaliseUrl(i.url);
+      if (seenUrls.has(normUrl)) return false;
+      seenUrls.add(normUrl);
+      return true;
+    })
     .sort((a, b) => new Date(b.published || 0) - new Date(a.published || 0))
     .map(i => ({ ...mapBase(i), type: 'podcast', show: i.show, platform: 'Podcast' }));
 
