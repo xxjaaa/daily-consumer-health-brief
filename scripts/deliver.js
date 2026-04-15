@@ -23,6 +23,20 @@ if (!fs.existsSync(digestPath)) {
 }
 const digest = JSON.parse(fs.readFileSync(digestPath, 'utf8'));
 
+// ─── Staleness guard ─────────────────────────────────────────────────────────
+// Refuse to deliver if digest-ready.json was prepared more than 4 hours ago.
+// This prevents accidentally sending stale content from a previous run.
+const MAX_DIGEST_AGE_HOURS = 4;
+const preparedAt = new Date(digest.prepared_at || digest.generated_at);
+const ageHours = (Date.now() - preparedAt.getTime()) / (1000 * 60 * 60);
+if (ageHours > MAX_DIGEST_AGE_HOURS) {
+  console.error(
+    `❌ digest-ready.json is ${ageHours.toFixed(1)}h old (prepared: ${preparedAt.toISOString()}).`,
+  );
+  console.error('   Re-run generate-feed.js and prepare-digest.js before delivering.');
+  process.exit(1);
+}
+
 const statePath = path.join(ROOT, 'state-feed.json');
 const state = JSON.parse(fs.readFileSync(statePath, 'utf8'));
 

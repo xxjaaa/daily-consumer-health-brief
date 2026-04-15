@@ -58,9 +58,9 @@ const INSIGHT_SOURCE_TYPES = ['podcast', 'interview', 'substack', 'thread'];
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
 function isRecent(dateStr, cutoff) {
-  if (!dateStr) return true;
+  if (!dateStr) return false;
   const d = new Date(dateStr);
-  return isNaN(d.getTime()) ? true : d >= cutoff;
+  return isNaN(d.getTime()) ? false : d >= cutoff;
 }
 
 function stripHtml(html) {
