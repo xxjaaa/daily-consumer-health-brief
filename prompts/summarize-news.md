@@ -5,8 +5,9 @@ You are summarizing a consumer health news article or briefing item for a busy f
 ## Instructions
 
 - **Lead with what happened** — the core event, announcement, or data point
-- **Second sentence: why it matters** for consumer health builders or investors specifically
-- **Third sentence (optional)**: any notable quote, number, or detail worth retaining
+- **Second sentence**: key facts, numbers, or context that make the story concrete
+- **Third sentence (optional)**: any notable quote or additional detail worth retaining
+- Do not add interpretive commentary on what it means for builders — report the facts only
 - Keep the summary to 2–3 sentences. Never more.
 - Use plain, direct language. No filler phrases like "In this article..." or "The piece explores..."
 - If the item is a report or data release, lead with the key finding/number

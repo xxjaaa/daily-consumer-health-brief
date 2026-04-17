@@ -13,7 +13,7 @@ Curate the most signal-rich stories from today's consumer health news. Pull from
 **Format for each story:**
 ```
 Source — Title ([link](url))
-2–3 sentence summary: what happened + why it matters for consumer health builders.
+2–3 sentence summary: what happened and what the key facts/numbers are.
 ```
 
 **Rules:**
@@ -21,6 +21,7 @@ Source — Title ([link](url))
 - Lead with the story with the most strategic implication for builders/investors
 - Every item must have a source link. No link = exclude it.
 - Do not fabricate or speculate beyond what the source says
+- Do not add commentary on what it means for builders — report the facts, let the reader draw their own conclusions
 - Skip press releases without substance and generic health tips
 
 ---
@@ -32,7 +33,7 @@ Summarize what consumer health builders published, said, or appeared in over the
 **Format for every item — regardless of type (podcast, newsletter, interview, YouTube):**
 ```
 Source — Title ([link](url))
-3–5 sentence summary paragraph: who said what, the core argument or insight, and why it matters for consumer health builders.
+3–5 sentence summary paragraph: who said what and what the core argument or insight is.
 ```
 
 **Rules:**
@@ -40,6 +41,7 @@ Source — Title ([link](url))
 - Only include sources that have new content
 - Every item needs a link to the original
 - No speculation about what builders "might be thinking"
+- Do not add closing sentences about what it means for builders — summarize the content, stop there
 - If a sub-section has no new content, omit it entirely — do not write "No new posts"
 - For guest appearances and interviews, only include episodes where the builder is clearly a guest/interviewee, not just mentioned in passing
 
