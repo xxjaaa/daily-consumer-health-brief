@@ -1,10 +1,6 @@
 {
-  "last_run": "2026-10-27T20:38:47.639Z",
+  "last_run": "2026-10-28T21:00:15.577Z",
   "seen_ids": [
-    "https://www.outofpocket.health/p/its-the-time-for-wearables",
-    "https://www.outofpocket.health/p/the-debate-around-pharma-advertising-to-doctors-part-2",
-    "https://www.outofpocket.health/p/give-to-get-healthcare-new-marketplaces-and-ground-truth",
-    "https://www.outofpocket.health/p/ubiome---how-microbiome-testing-becomes-fraud",
     "https://www.outofpocket.health/p/some-voiceai-in-healthcare-thoughts",
     "https://www.a16z.news/p/it-takes-too-long-to-do-things-in",
     "https://www.a16z.news/p/charts-of-the-week-is-tech-cheap",
@@ -500,6 +496,10 @@
     "3ca5351a-c84a-418b-a3dc-4150535120a2",
     "7faf3364-d0f2-11f1-9d18-8322bbf430aa",
     "https://www.a16z.news/p/databricks-and-the-future-of-the",
-    "956c6ef7-eb3e-40c6-a5ca-e0c48a453971"
+    "956c6ef7-eb3e-40c6-a5ca-e0c48a453971",
+    "https://www.a16z.news/p/the-new-security-agenda",
+    "https://www.outofpocket.health/p/the-race-to-build-hospital-agents",
+    "https://www.outofpocket.health/p/healthcare-ideas-someone-should-build",
+    "b838d689-cb56-456e-afb5-c4c59e6383d8"
   ]
 }
